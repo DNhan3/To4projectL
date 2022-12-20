@@ -1,8 +1,13 @@
+@font-face {
+    font-family: font;
+    src: url("Quicksand-VariableFont_wght.ttf");
+}
+
 body{
     margin: 0.3em;
     padding: 0;
     background-color: rgb(255, 244, 229);
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: font;
 }
 
 img{
@@ -16,7 +21,7 @@ h2{
 .header{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .justify{
@@ -33,25 +38,29 @@ p{
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-around;
 }
 
 .split > p {
     padding: 0 0.5em;
 }
 
-.split > img {
+.split > img{
     width: 50%;
 }
 
 .leftp{
+    font-size: 13px;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .rightp{
-    width: 100%;
+    width: 45%;
     right: 0;
-    padding-left: 0.4em;
+    padding-left: 0.2em;
+    align-items: flex-end;
 }
 
 #left{
